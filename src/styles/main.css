@@ -1,0 +1,105 @@
+
+:root{
+    --blue-srtong: #0F3057;
+    --blue-main: #00587A;
+    --turquoise: #008891;
+    --gray: #E7E7DE;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/roboto-v27-latin-900.woff2') format('woff2'),
+        url('../assets/fonts/roboto-v27-latin-900.woff') format('woff'),
+        url('../assets/fonts/roboto-v27-latin-regular.woff') format('woff'),
+        url('../assets/fonts/roboto-v27-latin-regular.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header {
+    background-color: var(--gray);
+    height: 45px;
+    box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo {
+    height: 35px;
+    align-self: center;
+    grid-column: 1 / 2;
+    margin-left: 2rem;
+}
+
+.git-hub {
+    width: 35px;
+    align-self: center;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin-right: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    /*height: 100vh;*/
+}
+
+.weather-api {
+    width: 65vw;
+    /*height: auto;*/
+    padding-top: 4rem;
+}
+
+.fetch-form {
+   display: flex;
+   justify-content: center;
+}
+
+.fetch-form input {
+    width: 200px;
+    height: 30px;
+    background-color: #F9F0F0;
+    border: 2px solid var(--blue-main);
+    border-radius: 5px;
+    margin: 0 10px;
+    color: var(--blue-main);
+    font-weight: bold;
+}
+
+.fetch-form input::placeholder{
+    text-align: center;
+    color: var(--turquoise);
+}
+
+.fetch-form button {
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--blue-main);
+    color: white;
+}
+
+.history {
+    width: 35vw;
+    /*height: auto;*/
+    padding-top: 4rem;
+}
+
+.history h2 {
+    font-size: 2.0rem;
+    color: var(--blue-main);
+    text-align: center;
+}
