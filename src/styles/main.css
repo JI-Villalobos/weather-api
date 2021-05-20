@@ -103,3 +103,127 @@ main {
     color: var(--blue-main);
     text-align: center;
 }
+
+.weather-api--cards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 3rem;
+    width: 150px;
+    height: 180px;
+    box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card--section-1 {
+    background-color: var(--gray);
+    border-radius: 10px 10px 0px 0px;
+    height: 55%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+}
+
+.add-icon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card--section-1 p {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    color: var(--blue-srtong);
+    font-size: 1.2rem;
+    text-align: center;
+    align-self: center;
+}
+
+.delete-icon {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    width: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.weather-image {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    width: 60px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card--section-2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.description {
+    text-align: center;
+    color: var(--blue-main);
+    font-size: 1.2rem;
+}
+
+.temperature {
+    text-align: center;
+    color: var(--blue-main);
+    font-size: 1.2rem;
+}
+
+.additional-data {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.min {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: var(--blue-main);
+    font-size: 0.9rem;
+    justify-self: center;
+}
+
+.max {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    color: var(--blue-main);
+    font-size: 0.9rem;
+    justify-self: center;
+}
+
+.wind-speed {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    color: var(--blue-main);
+    justify-self: center;
+}
+
+.wind-speed img {
+    width: 15px;
+}
+
+.humidity {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    color: var(--blue-main);
+    justify-self: center;
+}
+
+.humidity img {
+    width: 15px;
+}
