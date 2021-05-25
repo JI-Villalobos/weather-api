@@ -23,7 +23,7 @@ module.exports = {
         alias: {
             '@utils': path.resolve(__dirname, 'src/utils/'),
             '@templates': path.resolve(__dirname, 'src/templates/'),
-            '@styles': path.resolve(__dirname, 'src/styles'),
+            '@styles': path.resolve(__dirname, 'src/styles/'),
             '@images': path.resolve(__dirname, 'src/assets/images/')
         }
     },
@@ -86,5 +86,11 @@ module.exports = {
             ]
         }),
         new Dotenv(),
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        historyApiFallback: true,
+        port: 3006,
+    },
 }

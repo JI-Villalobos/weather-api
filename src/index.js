@@ -1,11 +1,12 @@
 import '@styles/main.css'
-import '@utils/fetchData.js'
-import fetchData from './utils/FetchData'
+import Template from '@templates/Template.js'
 
 const button = document.querySelector("button[type='submit']")
-var input = document.querySelector("input[type='text']")
+const main = document.getElementById("api")
 
-button.addEventListener("click", () => {
-    //console.log(input.value);
-    fetchData(input.value)
+
+button.addEventListener("click", async () => {
+    const node = await Template()
+    main.append(node)
 })
+

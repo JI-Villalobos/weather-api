@@ -2,18 +2,13 @@
 const URL = process.env.URL
 const KEY = process.env.API_KEY
 
-const fetchData =  (city) => {
+const fetchData = async (city) => {
    const apiUrl = `${URL}${city}&appid=${KEY}`
    try {
-       const response = fetch(apiUrl)
-        .then(response => response.json())
-        .then(responseJson => {
-            const items = []
-            responseJson.weather.forEach((item) => {
-                console.log(item.main);
-            })
-        }) 
-   }catch(error) {
+       const response = await fetch(apiUrl)
+       const data = await response.json()
+           return data
+        } catch(error) {
        console.log('Fetch error', error);
    }
 }
