@@ -3,8 +3,6 @@ import Template from '@templates/Template.js'
 
 const button = document.querySelector("button[type='submit']")
 const main = document.getElementById("api")
-const parent = document.querySelector("weather-api--cards")
-const toDelete = document.getElementsByClassName("delete-icon")
 
 button.addEventListener("click", async () => {
     const node = await Template()
