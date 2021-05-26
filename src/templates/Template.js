@@ -70,7 +70,7 @@ const Template = async () => {
     const card = document.createElement('div')
     card.append(sectionOne, sectionTwo)
     card.className = "card"
-
+    card.id = "card"
     return card
 
 }
