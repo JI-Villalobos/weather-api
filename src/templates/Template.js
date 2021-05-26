@@ -6,6 +6,7 @@ const Template = async () => {
 
     const data = await fetchData(location.value)
 
+    //-------card--section-1----------
     const addIcon = document.createElement('img')
     addIcon.src = "assets/images/add.svg"
     addIcon.className = "add-icon"
@@ -25,6 +26,7 @@ const Template = async () => {
     sectionOne.append(addIcon, cityAndCountry, delIcon, weatherImage)
     sectionOne.className = "card--section-1"
 
+    //---------card--section-2------
     const descP = document.createElement('p')
     descP.innerText = `${data.weather[0].description}`
     descP.className = "description"
