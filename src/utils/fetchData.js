@@ -1,3 +1,5 @@
+import responseStatusHandler from '@utils/responseStatusHandler'
+
 
 const URL = process.env.URL
 const KEY = process.env.API_KEY
@@ -7,9 +9,10 @@ const fetchData = async (city) => {
    try {
        const response = await fetch(apiUrl)
        const data = await response.json()   
+       responseStatusHandler(response.status, city)
            return data
         } catch(error) {
-       console.log('Fetch error', error);
+       console.log(error);
    }
 }
 
