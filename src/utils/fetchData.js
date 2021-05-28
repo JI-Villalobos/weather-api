@@ -8,7 +8,7 @@ const KEY = process.env.API_KEY
 
 const fetchData = async (city) => {
    
-    const apiUrl = `${URL}${city}&appid=${KEY}`
+    const apiUrl = `${URL}${city}&appid=${KEY}&units=metric`
     const response = await fetch(apiUrl)
 
     responseStatusHandler(response.status)

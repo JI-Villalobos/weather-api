@@ -33,21 +33,21 @@ const Template = async () => {
     descP.className = "description"
 
     const tempP = document.createElement('p')
-    tempP.innerText = `${data.main.temp}°F`
+    tempP.innerText = `${data.main.temp}°C`
     tempP.className = "temperature"
 
     const minP = document.createElement('p')
-    minP.innerText = `Min ${data.main.temp_min}°F`
+    minP.innerText = `Min ${data.main.temp_min}°C`
     minP.className = "min"
 
     const maxP = document.createElement('p')
-    maxP.innerText = `Max ${data.main.temp_max}°F`
+    maxP.innerText = `Max ${data.main.temp_max}°C`
     maxP.className = "max"
 
     const windIcon = document.createElement('img')
     windIcon.src = "assets/images/windy.svg"
     const windP = document.createElement('p')
-    windP.innerText = `${data.wind.speed}Km/H`
+    windP.innerText = `${data.wind.speed}Km/h`
     const windSection = document.createElement('div')
     windSection.append(windIcon, windP)
     windSection.className =  "wind-speed"
