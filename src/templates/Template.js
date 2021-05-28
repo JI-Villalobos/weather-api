@@ -5,6 +5,7 @@ const location = document.querySelector("input[type='text']")
 const Template = async () => {
 
     const data = await fetchData(location.value)
+    location.value = ""
 
     //-------card--section-1----------
     const addIcon = document.createElement('img')
@@ -72,7 +73,6 @@ const Template = async () => {
     card.className = "card"
     card.id = "card"
     return card
-
 }
 
 export default Template
