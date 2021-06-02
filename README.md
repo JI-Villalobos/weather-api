@@ -2,7 +2,7 @@
 
 >DOM Manipulation course project
 
-![icon](/src/assets/logo.svg)
+![icon](/src/assets/images/logo.svg)
 
 ## Requirements
 It's necessary set on .env file the nex variable.
