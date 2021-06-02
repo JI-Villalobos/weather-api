@@ -4,7 +4,7 @@ import errorHandler from '@utils/errorHandler.js'
 
 const button = document.querySelector("button[type='submit']")
 const main = document.getElementById("api")
-const location = document.querySelector("input[type='text']")
+const location = document.getElementById("input")
 const ERROR = "empty-field"
 
 

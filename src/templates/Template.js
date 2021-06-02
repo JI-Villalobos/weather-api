@@ -1,6 +1,6 @@
 import fetchData from '@utils/fetchData.js'
 
-const location = document.querySelector("input[type='text']")
+const location = document.getElementById("input")
 
 const Template = async () => {
 
@@ -17,7 +17,7 @@ const Template = async () => {
     cityAndCountry.id = "add"
     
     const delIcon = document.createElement('img')
-    delIcon.src = "assets/images/delete.svg"
+    delIcon.src = "assets/images/del.svg"
     delIcon.className = "delete-icon"
 
     const weatherImage = document.createElement('img')
