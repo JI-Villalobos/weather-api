@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 /**@type {import('webpack').Configuration} */
 
@@ -86,6 +87,7 @@ module.exports = {
             ]
         }),
         new Dotenv(),
+        new CleanWebpackPlugin(),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
