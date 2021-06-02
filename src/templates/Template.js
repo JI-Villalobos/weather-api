@@ -14,6 +14,7 @@ const Template = async () => {
 
     const cityAndCountry = document.createElement('p')
     cityAndCountry.innerText = `${data.name} ${data.sys.country}`
+    cityAndCountry.id = "add"
     
     const delIcon = document.createElement('img')
     delIcon.src = "assets/images/delete.svg"
