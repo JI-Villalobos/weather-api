@@ -5,8 +5,8 @@ const location = document.getElementById("input")
 const Template = async () => {
 
     const data = await fetchData(location.value)
-    location.value = ""
 
+    location.value = ""
     //-------card--section-1----------
     const addIcon = document.createElement('img')
     addIcon.src = "assets/images/add.svg"
@@ -21,7 +21,7 @@ const Template = async () => {
     delIcon.className = "delete-icon"
 
     const weatherImage = document.createElement('img')
-    weatherImage.src = "assets/images/raini.png"
+    weatherImage.src = ``
     weatherImage.className = "weather-image"
 
     const sectionOne = document.createElement('div')
