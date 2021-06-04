@@ -71,7 +71,7 @@ const Template = async (city) => {
     const card = document.createElement('div')
     card.append(sectionOne, sectionTwo)
     card.className = "card"
-    card.id = "card"
+    card.id = `${data.id}`
 
     return card 
 }
