@@ -17,7 +17,7 @@ button.addEventListener("click", async (evt) => {
     }
 })
 
-main.addEventListener("click", (event) => {
+main.addEventListener("click", (event) => {  
     if(event.target.classList.contains("delete-icon")){
         let id = event.target.parentElement.parentElement.id
         const idCard = document.getElementById(id)
