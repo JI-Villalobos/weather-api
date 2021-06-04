@@ -2,13 +2,10 @@ import fetchData from '@utils/fetchData.js'
 
 const URL = process.env.ICON_URL
 
-const location = document.getElementById("input")
+const Template = async (city) => {
 
-const Template = async () => {
+    const data = await fetchData(city)  
 
-    const data = await fetchData(location.value)  
-
-    location.value = ""
     //-------card--section-1----------
     const addIcon = document.createElement('img')
     addIcon.src = "assets/images/add.svg"
@@ -75,7 +72,8 @@ const Template = async () => {
     card.append(sectionOne, sectionTwo)
     card.className = "card"
     card.id = "card"
-    return card
+
+    return card 
 }
 
 export default Template
