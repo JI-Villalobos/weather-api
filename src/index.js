@@ -18,13 +18,10 @@ button.addEventListener("click", async (evt) => {
 })
 
 main.addEventListener("click", (event) => {
-    //const card = document.getElementById("card")
-
     if(event.target.classList.contains("delete-icon")){
-        const id = event.target.parentElement.parentElement.dataset.id
-        console.log(id);
-        //const parent = card.parentElement
-        //parent.removeChild(card)
+        let id = event.target.parentElement.parentElement.id
+        const idCard = document.getElementById(id)
+        main.removeChild(idCard)
     }else if(event.target.classList.contains("add-icon")){
         //TO DO: Get data from the seleted card
     }
