@@ -1,10 +1,7 @@
 import responseStatusHandler from '@utils/responseStatusHandler'
 
-
 const URL = process.env.URL
 const KEY = process.env.API_KEY
-
-//TO DO: implement a correct 404 response handler
 
 const fetchData = async (city) => {
    

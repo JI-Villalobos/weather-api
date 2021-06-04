@@ -1,10 +1,12 @@
 import fetchData from '@utils/fetchData.js'
 
+const URL = process.env.ICON_URL
+
 const location = document.getElementById("input")
 
 const Template = async () => {
 
-    const data = await fetchData(location.value)
+    const data = await fetchData(location.value)  
 
     location.value = ""
     //-------card--section-1----------
@@ -21,7 +23,7 @@ const Template = async () => {
     delIcon.className = "delete-icon"
 
     const weatherImage = document.createElement('img')
-    weatherImage.src = ``
+    weatherImage.src = `${URL}${data.weather[0].icon}@2x.png`
     weatherImage.className = "weather-image"
 
     const sectionOne = document.createElement('div')
