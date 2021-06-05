@@ -9,11 +9,13 @@ const fetchData = async (city) => {
     const apiUrl = `${URL}${city}&appid=${KEY}&units=metric`
     const response = await fetch(apiUrl)
 
-    responseStatusHandler(response.status)
-    const data = await response.json()
-    storeRequest(data)    
-    
-    return data
+    if(response.status != 200){
+        responseStatusHandler(response.status)
+    }else{
+        const data = await response.json()
+        storeRequest(data)
+        return data
+    }    
 }
 
 export default fetchData

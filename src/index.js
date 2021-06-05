@@ -17,6 +17,8 @@ button.addEventListener("click", async (evt) => {
         main.append(node)
         getStoredRequest()
     }
+    
+    location.value = ""
 })
 
 main.addEventListener("click", (event) => {  
