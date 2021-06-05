@@ -19,8 +19,12 @@ function storeRequest(request){
 }
 
 
-function getStoredRequest(){
-    console.log(requests);
+function getStoredRequest(id){
+    requests.forEach(data => {
+        if(data.id == id){
+            console.log(data);
+        }
+    })
 }
 
 export {storeRequest, getStoredRequest} 

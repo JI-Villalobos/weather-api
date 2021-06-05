@@ -15,9 +15,8 @@ button.addEventListener("click", async (evt) => {
     }else{
         const node = await Template(location.value)
         main.append(node)
-        getStoredRequest()
     }
-    
+
     location.value = ""
 })
 
@@ -28,6 +27,8 @@ main.addEventListener("click", (event) => {
         main.removeChild(idCard)
     }else if(event.target.classList.contains("add-icon")){
         //TO DO: Get data from the seleted card
+        let id = event.target.parentElement.parentElement.id
+        getStoredRequest(id)
     }
 })
 
