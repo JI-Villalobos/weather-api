@@ -1,6 +1,6 @@
 # Weather-API
 
->DOM Manipulation course project
+>DOM Manipulation course project at Platzi.
 
 ![icon](/src/assets/images/logo.svg)
 
