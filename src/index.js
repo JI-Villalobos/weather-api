@@ -1,6 +1,7 @@
 import '@styles/main.css'
 import Template from '@templates/Template.js'
 import errorHandler from '@utils/errorHandler.js'
+import { getStoredRequest } from '@utils/storeRequest.js'
 
 const button = document.querySelector("button[type='submit']")
 const main = document.getElementById("api")
@@ -14,6 +15,7 @@ button.addEventListener("click", async (evt) => {
     }else{
         const node = await Template(location.value)
         main.append(node)
+        getStoredRequest()
     }
 })
 
