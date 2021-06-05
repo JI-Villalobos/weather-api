@@ -5,7 +5,7 @@
 ![icon](/src/assets/images/logo.svg)
 
 ## Requirements
-It's necessary set on .env file the nex variable.
+It's necessary set on .env file the next variables.
 
 API = Openweather API URL.
 KEY = Registration on the OpenWeather site is necessary to obtain API KEY.
