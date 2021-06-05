@@ -5,7 +5,7 @@
 ![icon](/src/assets/images/logo.svg)
 
 ## Requirements
-It's necessary set on .env file the next variables:
+![icon](/src/assets/images/add.svg)It's necessary set on .env file the next variables:
 
 ### API = Openweather API URL.
 ### KEY = Registration on the OpenWeather site is necessary to obtain API KEY.
