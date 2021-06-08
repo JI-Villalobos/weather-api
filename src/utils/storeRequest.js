@@ -1,3 +1,5 @@
+import showAdditionalData from '@templates/showAdditionalData.js'
+
 const requests = []
 
 
@@ -22,7 +24,7 @@ function storeRequest(request){
 function getStoredRequest(id){
     requests.forEach(data => {
         if(data.id == id){
-            console.log(data);
+            showAdditionalData(data.name, data.coord.lat, data.coord.lon, data.main.feels_like, data.main.pressure)
         }
     })
 }
