@@ -221,3 +221,91 @@ main {
     width: 15px;
 }
 
+/*------------------------------------------------------------*/
+.additional {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: var(--gray);
+    color: var(--turquoise);
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    /*height: 80px;*/
+}
+
+.sub-header img {
+    width: 29px;
+    height: 41px;
+}
+
+.data {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    height: 90px;
+}
+
+.data p {
+    align-self: center;
+}
+
+.data img {
+    height: 24px;
+    width: 24px;
+}
+
+.adj {
+    display: flex;
+    flex-direction: row;
+}
+
+.data-lat {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.data-lon {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+.data-feel {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.data-press {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+}
+
+.ok-button {
+    height: 40px;
+    /*height: auto;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ok-button button {
+    background-color: var(--blue-main);
+    height: 25px;
+    width: 65px;
+    border-radius: 5px;
+    border: none;
+    color: var(--gray);
+}
