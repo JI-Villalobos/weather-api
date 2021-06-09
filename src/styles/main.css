@@ -36,6 +36,14 @@ header {
     grid-template-columns: repeat(2, 1fr);
 }
 
+header a {
+    width: 35px;
+    align-self: center;
+    grid-column: 2 / 3;
+    justify-self: end;
+    margin-right: 2rem;
+}
+
 .logo {
     height: 35px;
     align-self: center;
@@ -45,10 +53,10 @@ header {
 
 .git-hub {
     width: 35px;
-    align-self: center;
+    /*align-self: center;
     grid-column: 2 / 3;
     justify-self: end;
-    margin-right: 2rem;
+    margin-right: 2rem;*/
 }
 
 main {
